@@ -4,6 +4,7 @@ body {
     background: #f4f7f8;
 }
 
+/* NAVBAR */
 .navbar {
     background: #00796b;
     display: flex;
@@ -20,18 +21,21 @@ body {
     background: #004d40;
 }
 
+/* HEADER */
 header {
     text-align: center;
     padding: 30px;
     background: white;
 }
 
+/* CONTAINER */
 .container {
     width: 80%;
     margin: auto;
     padding: 20px;
 }
 
+/* POST CARDS */
 .post {
     background: white;
     margin: 20px 0;
@@ -50,4 +54,44 @@ header {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
+}
+
+/* INPUT (SEARCH BAR) */
+input {
+    font-family: inherit;
+}
+
+/* 🌙 DARK MODE */
+body.dark-mode {
+    background: #121212;
+    color: #eaeaea;
+}
+
+body.dark-mode .post {
+    background: #1e1e1e;
+    color: #eaeaea;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.6);
+}
+
+body.dark-mode .navbar {
+    background: #111;
+}
+
+body.dark-mode .navbar a {
+    color: #eaeaea;
+}
+
+body.dark-mode header {
+    background: #1a1a1a;
+    color: #eaeaea;
+}
+
+body.dark-mode a {
+    color: #4dd0e1;
+}
+
+body.dark-mode input {
+    background: #2a2a2a;
+    color: white;
+    border: 1px solid #444;
 }
