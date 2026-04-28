@@ -7,6 +7,7 @@
 
 <body>
 
+<!-- NAVBAR -->
 <div class="navbar">
     <a href="index.html">Home</a>
     <a href="blog.html">Blog</a>
@@ -14,19 +15,15 @@
     <a href="contact.html">Contact</a>
 </div>
 
+<!-- HEADER -->
 <header style="background:white; padding:40px; text-align:center;">
-
-    <h1 style="color:#00796b; font-size:40px;">
-        Latest Health Articles
-    </h1>
-
+    <h1 style="color:#00796b; font-size:40px;">Latest Health Articles</h1>
     <p style="color:#555; font-size:18px;">
         Science-based medical, nutrition, and wellness insights
     </p>
-
 </header>
-<input type="text" id="searchInput" onkeyup="searchPosts()" placeholder="Search articles..."
-style="padding:10px; width:60%; border-radius:20px; border:1px solid #ccc;">
+
+<!-- CATEGORIES -->
 <div style="text-align:center; margin:20px;">
 
     <a href="#" style="margin:10px; text-decoration:none; background:#00796b; color:white; padding:10px 15px; border-radius:20px;">
@@ -42,58 +39,57 @@ style="padding:10px; width:60%; border-radius:20px; border:1px solid #ccc;">
     </a>
 
 </div>
-    <div style="text-align:center; margin:20px;">
 
+<!-- ⭐ FEATURED ARTICLE -->
+<div style="width:80%; margin:auto; background:white; padding:20px; border-radius:12px; box-shadow:0px 4px 12px rgba(0,0,0,0.1); margin-bottom:20px;">
+
+    <h2 style="color:#00796b;">⭐ Featured Article</h2>
+
+    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" style="width:100%; border-radius:10px;">
+
+    <h3>
+        <a href="folic-acid.html" style="text-decoration:none; color:#00796b;">
+            Importance of Folic Acid in Brain Development
+        </a>
+    </h3>
+
+    <p>
+        Folic acid is essential for DNA synthesis, brain development, and preventing neural tube defects during pregnancy.
+    </p>
+
+</div>
+
+<!-- SEARCH BAR -->
+<div style="text-align:center; margin:20px;">
     <input type="text" id="searchInput" onkeyup="searchPosts()" placeholder="Search articles..."
-        style="padding:10px; width:60%; border-radius:20px; border:1px solid #ccc;">
+    style="padding:10px; width:60%; border-radius:20px; border:1px solid #ccc;">
+</div>
 
-    </div>
-
+<!-- BLOG POSTS -->
 <div class="container" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px;">
 
     <div class="post">
-
         <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061">
-
-        <h2>
-        <a href="folic-acid.html">Importance of Folic Acid</a>
-    </h2>
-
-    <p>
-        Folic acid plays a key role in DNA synthesis and fetal brain development.
-    </p>
-
-    </div>
-    <div class="post">
-
-    <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71">
-
-    <h2>
-        <a href="nutrition.html">Gut Health and Immunity</a>
-    </h2>
-
-    <p>
-        The gut microbiome strongly influences immunity and overall health.
-    </p>
-
+        <h2><a href="folic-acid.html">Importance of Folic Acid</a></h2>
+        <p>Folic acid plays a key role in DNA synthesis and fetal brain development.</p>
     </div>
 
     <div class="post">
+        <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71">
+        <h2><a href="nutrition.html">Gut Health and Immunity</a></h2>
+        <p>The gut microbiome strongly influences immunity and overall health.</p>
+    </div>
 
-    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352">
-
-    <h2>
-        <a href="balanced-diet.html">Balanced Diet Basics</a>
-    </h2>
-
-    <p>
-        A balanced diet supports energy production and disease prevention.
-    </p>
-
+    <div class="post">
+        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352">
+        <h2><a href="balanced-diet.html">Balanced Diet Basics</a></h2>
+        <p>A balanced diet supports energy production and disease prevention.</p>
     </div>
 
 </div>
-    <script>
+
+<!-- SEARCH SCRIPT -->
+<script>
 function searchPosts() {
     let input = document.getElementById("searchInput").value.toLowerCase();
     let posts = document.getElementsByClassName("post");
@@ -108,4 +104,7 @@ function searchPosts() {
         }
     }
 }
-    </script>
+</script>
+
+</body>
+</html>
