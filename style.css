@@ -151,3 +151,63 @@ body.dark-mode a {
 .post, .featured {
     transition: 0.3s ease-in-out;
 }
+
+body.dark-mode a {
+    color: #4dd0e1;
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+    input {
+        width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar a {
+        padding: 10px;
+        display: block;
+    }
+}
+
+/* EMAIL SUBSCRIPTION */
+.subscribe-box {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.subscribe-box input {
+    width: 70%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.subscribe-box button {
+    padding: 12px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 20px;
+    background: #00796b;
+    color: white;
+    cursor: pointer;
+}
+
+.subscribe-box button:hover {
+    background: #004d40;
+}
+
+body.dark-mode .subscribe-box {
+    background: #1e1e1e;
+    color: #eaeaea;
+}
